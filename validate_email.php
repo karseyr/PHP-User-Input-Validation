@@ -10,7 +10,7 @@ function validateEmail($email){
 	if(strlen($email) < 7) {
 		return 2;//Returns 2 if: email is too short (<7 characters).  Shortest possible email: a@b.cd (as no single letter TLDs exist for email use)
 	}
-	//End basic contain tests
+	//End basic tests
 	
 	//Begin more advanced testing
 	
