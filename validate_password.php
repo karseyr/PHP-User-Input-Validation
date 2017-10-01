@@ -1,11 +1,11 @@
 <?php
 function validatePassword($password){
 	//Begin basic testing
-	if((strlen($password) < 8) || $password == null) {
-		return 0;//Returns 0 if: password is too short (<8 characters)
+	if(strlen($password) < 8 || empty($password)) {
+		return 0;//Returns 0 if: password is too short (<8 characters) OR doesn't exist.
 	}
 	if((strlen($password) > 48)) {
-		return 0;//Returns 0 if: password is too short (<8 characters)
+		return 0;//Returns 0 if: password is too long (>48 characters)
 	}
 	//End basic length tests
 	
